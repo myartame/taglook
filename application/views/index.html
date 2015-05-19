@@ -3,12 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Taglook</title>
+
+	<!-- JQuery -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<link rel="stylesheet/less" type="text/css" href="<?= resource_url('css', 'common.less') ?>">
+	<link rel="stylesheet/less" type="text/css" href="<?= resource_url('css', 'nav.less') ?>">
+
+	<script type"text/javascript" src="<?= resource_url('js', 'main.js') ?>"></script>
+
+	<!-- Less.js -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>
 </head>
 <body>
 	<div id="main-container">
-		<div id="nav-container">
-			
-		</div>
+		<nav id="nav-container">
+			<div id="nav-wrap">
+				<div id="nav-header-area">
+					<div id="nav-header-hamberger">
+						<img id="hamberger-btn" src="<?= resource_url('img', 'hamberger.png') ?>" alt="">
+						<div id="hamberger-dropdown" class="nav-dropdown">
+							<ul>
+								<li><a href="">Spring</a></li>
+								<li><a href="">Summer</a></li>
+								<li><a href="">Fall</a></li>
+								<li><a href="">Winter</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-header-line"></div>
+					<div id="nav-header-noti">
+						<img src="<?= resource_url('img', 'noti.png') ?>" alt="">
+						<div id="nav-noti-label">
+							<p>13</p>
+						</div>
+					</div>
+					<div class="nav-header-line"></div>
+					<div id="nav-header-profile">
+						<img src="<?= resource_url('img', 'profile.png'); ?>" alt="">
+						<p>이지은</p>
+					</div>
+					<div class="nav-header-line"></div>
+				</div>
+				<div id="nav-brand-area">
+					<h1>Taglook</h1>
+					<div id="nav-brand-gender"></div>
+				</div>
+				<div id="nav-search-area">
+					<input type="text" placeholder="검색어를 입력해주세요">
+					<div id="nav-search-btn">
+						<img src="<?= resource_url('img', 'search.png') ?>" alt="">
+					</div>
+				</div>
+			</div>
+		</nav>
 	</div>
 </body>
 </html>
