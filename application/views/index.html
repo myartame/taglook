@@ -10,6 +10,8 @@
 
 	<link rel="stylesheet/less" type="text/css" href="<?= resource_url('css', 'common.less') ?>">
 	<link rel="stylesheet/less" type="text/css" href="<?= resource_url('css', 'nav.less') ?>">
+	<link rel="stylesheet/less" type="text/css" href="<?= resource_url('css', 'main.less') ?>">
+	<link rel="stylesheet/less" type="text/css" href="<?= resource_url('css', 'item.less') ?>">
 
 	<script type"text/javascript" src="<?= resource_url('js', 'main.js') ?>"></script>
 
@@ -38,6 +40,13 @@
 						<div id="nav-noti-label">
 							<p>13</p>
 						</div>
+						<div id="nav-noti-dropdown">
+							<div id="noti-dropdown">
+								<div id="noti-subject">
+									<h4>알림</h4>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="nav-header-line"></div>
 					<div id="nav-header-profile">
@@ -58,6 +67,74 @@
 				</div>
 			</div>
 		</nav>
+		<div id="item-container">
+			<div id="ranking-area">
+				<div id="ranking-title-wrap">
+					<h3>오늘의 인기 상품</h3>
+				</div>
+				<div id="ranking-item-wrap">
+					<div class="item">
+						<div class="item-img">
+							<img class="item-main-img" src="<?= resource_url('img', 'item.jpg') ?>" alt="">
+							<div class="item-img-cover"></div>
+							<div class="best-badge">
+								<img src="<?= resource_url('img', 'best.png') ?>" alt="">
+								<p>BEST 1</p>
+							</div>
+							<div class="item-tab">
+								<ul>
+									<li><img src="<?= resource_url('img', 'like.png') ?>" alt=""></li>
+									<li><img src="<?= resource_url('img', 'share.png') ?>" alt=""></li>
+									<li><img src="<?= resource_url('img', 'archive.png') ?>" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item-description">
+							<div class="item-content">
+								<div class="item-content-profile">
+									<img src="<?= resource_url('img', 'profile.png') ?>" alt="">
+									<p>Sylvester</p>
+								</div>
+								<div class="item-content-text">
+									<p class="item-text-like">
+										12,517명이 좋아합니다.
+									</p>
+									<p class="item-text-price">
+										12,000원 ~
+									</p>
+								</div>
+								<div class="item-content-color">
+									<p>색상</p>
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="item-content-tag">
+									<img src="<?= resource_url('img', 'tag.png') ?>" alt="">
+									<ul>
+										<li>태그당</li>
+										<li>더이상은</li>
+										<li>네이버</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-clothes">
+								<ul>
+									<li><img src="<?= resource_url('img', 'outer.png') ?>" alt=""></li>
+									<div class="clothes-line"></div>
+									<li><img src="<?= resource_url('img', 'pants.png') ?>" alt=""></li>
+									<div class="clothes-line"></div>
+									<li><img src="<?= resource_url('img', 'shoes.png') ?>" alt=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
